@@ -38,7 +38,7 @@ srchtml=f.read()
 f.close()
 soup = BeautifulSoup(srchtml, 'html.parser')
 sectionno=soup.find_all('section')
-d=['introduction','theory','objective','experiment','manual','quizzes','further_readings','procedure','hh','ll']
+#d=['introduction','theory','objective','experiment','manual','quizzes','further_readings','procedure','hh','ll']
 print len(sectionno)
 sectionNumber=1
 st=""
