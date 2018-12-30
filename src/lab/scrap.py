@@ -14,7 +14,7 @@ def writefile(fname,s,s1,heading):
 	#print content
 	f.seek(0)
 	content=f.read()
-	k=content.index('<div class="col-md-10 lab-list-col-10">')
+	#k=content.index('<div class="col-md-10 lab-list-col-10">')
 	
 	t1=content.index('<!--edit1-->')
 	print t1
@@ -44,7 +44,7 @@ srchtml=f.read()
 f.close()
 soup = BeautifulSoup(srchtml, 'html.parser')
 sectionno=soup.find_all('section')
-d=['introduction','theory','objective','experiment','manual','quizzes','further_readings','procedure','hh','ll']
+#d=['introduction','theory','objective','experiment','manual','quizzes','further_readings','procedure','hh','ll']
 print len(sectionno)
 sectionNumber=1
 st=""
@@ -104,7 +104,7 @@ f.write(content)
 #print content
 f.seek(0)
 content=f.read()
-k=content.index('<div class="col-md-10 lab-list-col-10">')
+#k=content.index('<div class="col-md-10 lab-list-col-10">')
 	
 t1=content.index('<!--edit1-->')
 print t1
